@@ -26,3 +26,99 @@
 		<p>Summary: Greater specificity makes CSS prioritize that particular styling.</p>
 	</body>
 </html>
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Result</title>
+	</head>
+	<body>
+		<h3 class="red">I'm an h3 header in the red class!</h3>
+		<h3>I'm just a regular old h3 header.</h3>
+		<p class="red">I'm a paragraph in the red class!</p>
+		<p>I'm just a regular old paragraph.</p>
+		<p id="rogue">I'm a rogue paragraph! I do what I want!</p>
+	</body>
+</html>
+
+
+
+<div class="square"></div>
+<img class="square"/>
+<td class="square"></td>
+
+
+
+
+<div id="first"></div>
+<div id="second"></div>
+<p id="intro"></p>
+
+#first {
+    height: 50px;
+}
+
+#second {
+    height: 100px;
+}
+
+#intro {
+    color: #FF0000;
+}
+
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>Result</title>
+	</head>
+	<body>
+	<ul>
+		<li><a href="http://www.codecademy.com/">Codecademy Home</a></li>
+		<li><a href="http://www.codecademy.com/learn">Learn</a></li>
+		<li><a href="http://www.codecademy.com/create/creator">Teach</a></li>
+		<li><a href="http://www.codecademy.com/edit_account/basic_info">Settings</a></li>
+	</ul>
+	</body>
+</html>
+
+
+a:hover {
+	color: #cc0000;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+a:link: An unvisited link.
+a:visited: A visited link.
+a:hover: A link you're hovering your mouse 
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div>
+			<p>I'm the first child!</p>
+			<p>We're not.</p>
+			<p>We're not.</p>
+			<p>We're not.</p>
+			<p>We're not.</p>
+			<p>We're not.</p>
+			<p>We're not.</p>			
+		</div>
+	</body>
+</html>
+
+p:nth-child(3n+1) {
+ color: green;   
+}
