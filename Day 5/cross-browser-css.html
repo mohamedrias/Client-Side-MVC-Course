@@ -9,8 +9,14 @@
         /* IE7 */
     *+html #dieciocho {  color: red }
 
+    /* IE 8*/
+    selector { property:value\9; }
+    selector { property:value\0; }
 
-    /* saf3+, chrome1+ */
+    /* IE9 */
+    :root selector { property:value \0;}
+
+        /* saf3+, chrome1+ */
     @media screen and (-webkit-min-device-pixel-ratio:0) {
     #elem  { color: red  }
     }
@@ -59,6 +65,18 @@ color:red;
 
 .selector { (;property: value;); }
 
+body:nth-of-type(1) selector { color: #333333; }
+selector { (-bracket-:hack;property:value;); }
+selector { -bracket-:hack[;property:value;]; }
+
+
+Safari
+@media all and (-webkit-min-device-pixel-ratio: 0) { selector { property:value; } }
+html:lang(en)>body selector { property:value; }
+
+
+Opera
+@media all and (min-width: 0px){ selector { property:value; } }
 
 Refer:
 http://rafael.adm.br/css_browser_selector/
