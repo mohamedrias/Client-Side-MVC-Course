@@ -1,0 +1,64 @@
+<style>
+
+    /* IE6 and below */
+    * html #elem  { color: red }
+
+    /* IE6 */
+    #once { _color: blue }
+
+        /* IE7 */
+    *+html #dieciocho {  color: red }
+
+
+    /* saf3+, chrome1+ */
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+    #elem  { color: red  }
+    }
+
+
+    /* IE 10+ */
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        #veintiun { color: red; }
+    }
+
+        /* FF 3.5+ */
+    body:not(:-moz-handler-blocked) #cuarenta { color: red; }
+
+
+
+    /* IE8, IE9 */
+    #anotherone  {color: blue\0/;} /* must go at the END of all rules */
+
+
+        /* IE9, IE10 */
+    @media screen and (min-width:0\0) {
+        #veintidos { color: red}
+    }
+
+</style>
+
+
+
+
+
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class=""> <!--<![endif]-->
+
+
+
+/* will be red only in google chrome */
+#test3{
+color:green;
+(-bracket-:hack;
+color:red;
+);
+}
+
+.selector { (;property: value;); }
+
+
+Refer:
+http://rafael.adm.br/css_browser_selector/
